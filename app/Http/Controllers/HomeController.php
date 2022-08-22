@@ -45,7 +45,7 @@ class HomeController extends Controller
 
     public function getProduct()
     {
-        $products = Product::limit(16)->get();
+
 
         $products = Product::limit(16)->get();
         foreach ($products as $product) {
