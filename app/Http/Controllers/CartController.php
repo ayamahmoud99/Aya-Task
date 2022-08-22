@@ -50,8 +50,6 @@ class CartController extends Controller
             $loggedIn = true;
             $carts = Cart::where('user_id', '=', Auth::user()->id)->get();
             return view('home.includes.cart', compact('carts', 'loggedIn'));
-        } else {
-            return redirect()->route('login');
         }
 
 
